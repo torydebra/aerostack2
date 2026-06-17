@@ -82,8 +82,8 @@ Plugin::makeTrajectoryGenerator() const
 {
   auto generator =
     std::make_shared<dynamic_traj_generator::DynamicTrajectory>();
-  generator->setLowSpeedVelocityFactor(ls_velocity_factor_);
-  generator->setLowSpeedAccelerationFactor(ls_acceleration_factor_);
+  // generator->setLowSpeedVelocityFactor(ls_velocity_factor_);
+  // generator->setLowSpeedAccelerationFactor(ls_acceleration_factor_);
   return generator;
 }
 
