@@ -78,7 +78,7 @@ public:
 
   bool own_modify(as2_msgs::action::FollowPath::Goal & _goal) override
   {
-    RCLCPP_INFO(node_ptr_->get_logger(), "Follow path modiy accepted");
+    RCLCPP_INFO(node_ptr_->get_logger(), "Follow path modify accepted");
     RCLCPP_INFO(node_ptr_->get_logger(), "Follow path with speed: %.2f (x:%.2f, y:%.2f, z:%.2f )", 
       _goal.max_speed, _goal.max_speed_x, _goal.max_speed_y, _goal.max_speed_z);
     RCLCPP_INFO(node_ptr_->get_logger(), "Follow path with yaw mode: %d", _goal.yaw.mode);

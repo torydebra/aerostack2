@@ -240,7 +240,6 @@ void BehaviorServer<actionT>::modify(
   const typename modify_srv::Request::SharedPtr request,
   typename modify_srv::Response::SharedPtr response)
 {
-  RCLCPP_INFO(this->get_logger(), "MODIFY");
   const typename actionT::Goal::SharedPtr goal = std::make_shared<typename actionT::Goal>(
     request->goal);
   bool success = on_modify(goal);
