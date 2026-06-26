@@ -201,6 +201,10 @@ private:
     feedback_.actual_speed_y = 0.0;
     feedback_.actual_speed_z = 0.0;
     feedback_.remaining_waypoints = 0;
+    feedback_.max_speed_requested = 0.0;
+    feedback_.max_speed_x_requested = 0.0;
+    feedback_.max_speed_y_requested = 0.0;
+    feedback_.max_speed_z_requested = 0.0;
     return;
   }
 

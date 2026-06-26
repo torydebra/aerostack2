@@ -73,6 +73,10 @@ public:
     updateDesiredPose(_goal, path_ids_remaining_[0]);
     feedback_.next_waypoint_id = path_ids_remaining_.front();
     feedback_.remaining_waypoints = path_ids_remaining_.size();
+    feedback_.max_speed_requested = _goal.max_speed;
+    feedback_.max_speed_x_requested = _goal.max_speed_x;
+    feedback_.max_speed_y_requested = _goal.max_speed_y;
+    feedback_.max_speed_z_requested = _goal.max_speed_z;
     return true;
   }
 
@@ -102,6 +106,10 @@ public:
     updateDesiredPose(_goal, path_ids_remaining_[0]);
     feedback_.next_waypoint_id = path_ids_remaining_.front();
     feedback_.remaining_waypoints = path_ids_remaining_.size();
+    feedback_.max_speed_requested = _goal.max_speed;
+    feedback_.max_speed_x_requested = _goal.max_speed_x;
+    feedback_.max_speed_y_requested = _goal.max_speed_y;
+    feedback_.max_speed_z_requested = _goal.max_speed_z;
     return true;
   }
 
